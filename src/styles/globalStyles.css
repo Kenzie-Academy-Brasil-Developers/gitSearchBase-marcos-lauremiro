@@ -8,5 +8,20 @@
   --color-grey-6: #a6a8a9;
   --color-grey-7: #ffffff;
   --color-alert: #c22554;
+  
   --font-primary: "Inter", sans-serif;
+  --font-1: 1.75rem;
+  --font-2: 1rem;
+  --font-3: .75rem;
+
+  --font-weight-1:800;
+  --font-weight-2:600;
+  --font-weight-3:400;
+  --font-weight-4:200;
+
+  --gap-1: 1.5rem;
+  --gap-2:1rem;
+  --gap-3:.75rem;
+
+  --radius-1: 4px;
 }
