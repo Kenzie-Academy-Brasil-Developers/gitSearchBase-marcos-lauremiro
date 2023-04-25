@@ -13,6 +13,7 @@
   --font-1: 1.75rem;
   --font-2: 1rem;
   --font-3: .75rem;
+  --font-4: 1.2rem;
 
   --font-weight-1:800;
   --font-weight-2:600;
@@ -23,5 +24,7 @@
   --gap-2:1rem;
   --gap-3:.75rem;
 
+
   --radius-1: 4px;
+  --radius-2: 8px;
 }
