@@ -31,7 +31,7 @@ export const renderProfile = (objProfile) => {
     buttonHeader.innerText = 'Trocar de usuario'
 
     buttonHeader.addEventListener('click', () => {
-        window.location.replace('../index.html')
+        window.location.replace('/index.html')
     })
 }
 
