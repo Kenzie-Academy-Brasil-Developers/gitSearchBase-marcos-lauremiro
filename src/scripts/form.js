@@ -1,4 +1,3 @@
-import { users } from "./request.js"
 
 export const usuarioGithub = () => {
     const input = document.querySelector('#usuario')
@@ -7,11 +6,8 @@ export const usuarioGithub = () => {
     button.addEventListener('click',async (e) => {
         e.preventDefault()
         let userName = input.value
-        if(userName == ''){
-            alert('Digite um usuario')
-            userName = input.value
-        }else{
-            console.log(await users(userName))
-        }
+        
+        const nameUser = JSON.stringify(localStorage.setItem('nameSearch', userName))
+        window.location.assign('http://127.0.0.1:5500/src/pages/profile.html')
     })
 }
