@@ -8,6 +8,6 @@ export const usuarioGithub = () => {
         let userName = input.value
         
         const nameUser = JSON.stringify(localStorage.setItem('nameSearch', userName))
-        window.location.replace('http://127.0.0.1:5500/src/pages/profile.html')
+        window.location.replace('../src/pages/profile.html')
     })
 }
