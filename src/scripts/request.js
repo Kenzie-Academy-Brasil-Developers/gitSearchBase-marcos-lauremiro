@@ -11,7 +11,7 @@ export const users = async (nameUser) =>{
         if(res.ok){
             return res.json()
         }else{
-            window.location.replace('../src/pages/error.html')
+            window.location.replace('../pages/error.html')
             throw new Error('usuario não encotrado')
         }
     })
