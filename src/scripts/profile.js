@@ -43,15 +43,21 @@ export const renderRepos = (arrayRepos) => {
         const li = document.createElement('li')
         const h2 = document.createElement('h2')
         const p = document.createElement('p')
+        const divButton = document.createElement('div')
         const button = document.createElement('button')
 
         ul.append(li)
         li.append(h2)
         li.append(p)
-        li.append(button)
+        divButton.append(button)
+        li.append(divButton)
 
         h2.innerHTML = element.name
-        p.innerHTML = 'Lorem ipsum dolor, sit Voluptas aspernatur recusandae laborum. Illum eaque illo eum, repellendus quam incidunt dignissimos suscipit officia molestiae doloremque deserunt'
+        if(element.description == null){
+            p.innerHTML = 'sit amet, consectetur adipisicing elit. Deserunt placeat ipsa nam libero aut suscipit beatae cupiditate architecto. Rerum , praesentium porro'
+        }else{
+            p.innerHTML = element.description
+        }
         button.innerHTML = 'repositório'
 
         button.addEventListener('click', (e) => {
