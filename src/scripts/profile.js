@@ -54,6 +54,9 @@ export const renderRepos = (arrayRepos) => {
         p.innerHTML = 'Lorem ipsum dolor, sit Voluptas aspernatur recusandae laborum. Illum eaque illo eum, repellendus quam incidunt dignissimos suscipit officia molestiae doloremque deserunt'
         button.innerHTML = 'repositório'
 
+        button.addEventListener('click', (e) => {
+            location.replace(element.html_url)
+        })
         
     })
 }
